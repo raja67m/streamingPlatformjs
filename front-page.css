@@ -1,0 +1,12 @@
+*{
+   margin: 0px;
+   padding: 0px;
+}
+.bodyContainer{
+   background:linear-gradient(to top,rgba(95, 93, 93, 0), rgb(0, 0, 0)),url("./averagers\ wallpaper.jpg");
+   
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   width: 100%;
+}
