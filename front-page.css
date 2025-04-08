@@ -92,14 +92,20 @@ padding: 60px 9% 0;
    background: transparent;
    border: 2px solid red;
    border-radius: 9px;
-   padding: 10px;
+   padding: 8px;
    color: white;
    font-weight: bold;
    cursor: pointer;
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  transition: .2s ease-in-out;
+ font-size: 12px;
 }
 .movieWatchingBtn button:hover{
    color: white;
-  background-color: rgb(240, 114, 114);
+  background-color: rgb(239, 11, 11);
+}
+.movieWatchingBtn i{
+font-size: 12px;
+color: white;
+margin-right: 2px;
 }
