@@ -6,7 +6,17 @@ const imaUrlList=[
 ];
 
 const aritcalContainer=document.getElementById("item");  
-aritcalContainer.innerHTML=`<img src="${imaUrlList[0]}" />`;
+
+// aritcalContainer.innerHTML=`<img src="${imaUrlList[0]}" />`;
+
+for(let i=0;i<2  && i<imaUrlList.length;i++){
+   const img=document.createElement("img");
+   img.src=imaUrlList[i];
+   aritcalContainer.appendChild(img);
+}
+
+
+
 
 let imgIndex=0;
 // prev image function
@@ -31,3 +41,7 @@ function nextImage(){
  
 
 }
+
+var a=["aprile","orange","banana","graps"];
+
+console.log(a.slice(1,3)); 
