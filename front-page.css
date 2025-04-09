@@ -67,7 +67,6 @@ font-weight: 600;
  height: 60vh;
 padding: 60px 9% 0;
 }
-
 .sectionConainer p{
    font-size: 15px;
    margin: 10px 0 25px;
@@ -146,7 +145,6 @@ to{
    transform: translateY(0px);
    opacity: 1;
    filter: blur(0px);
-
 }
 }
 
@@ -162,4 +160,20 @@ to{
 }
 .bodyContainer .sectionConainer .movieWatchingBtn button{
    animation-delay: 1.8s !important;
+}
+
+/* arrow button */
+.arrow{
+   display: inline-block;
+  margin-left: 13%;
+}
+.arrow i{
+   font-size: 25px;
+   padding: 5px;
+   cursor: pointer;
+   border-radius: 50px;
+   margin: 5px;
+}
+.arrow i:hover{
+   background-color: rgba(239, 11, 11,0.7);
 }
