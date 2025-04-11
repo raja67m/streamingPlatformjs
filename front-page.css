@@ -1,7 +1,7 @@
 *{
    margin: 0px;
    padding: 0px;
-  
+overflow-y: hidden;  
 }
 .main{
    background:linear-gradient(to top,rgba(59, 57, 57, 0.5), rgb(0, 0, 0)),url("./averagers\ wallpaper.jpg");
@@ -111,15 +111,38 @@ color: white;
 margin-right: 2px;
 }
 .thumbnali{
- width:850px;
- display: flex;
-overflow-x: scroll;
+max-width:850px;
 }
-.thumbnali div{
+.thumbnali .image-List{
+display: grid;
+grid-template-columns: repeat(11,1fr);
+gap: 18px;
+overflow-x: auto;
+scrollbar-width: none;
+
+}
+.thumbnali .image-List img{
+   width: 90px;
+   height: 80%;
+   object-fit: cover;
+   border-radius: 9px;
+transition: transform 0.5s;
+}
+.image-List img:hover{
+   cursor: pointer;
+
+   transform: scale(1.1);
+
+}
+.thumbnali .image-List img::-webkit-scrollbar{
+   display: none;
+}
+
+/* .thumbnali div{
   width: 400px;
   height: 110px;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns:repeat(10,1fr);
  gap: 20px;
  padding: 10px;
  flex: none;
@@ -130,11 +153,16 @@ overflow-x: scroll;
    height: 100%;
    object-fit: cover;
  border-radius: 7px;
+ transition:transform 0.5s;
 
+}
+.thumbnali div img:hover{
+   cursor: pointer;
+   transform: scale(1.1);
 }
 .thumbnali::-webkit-scrollbar{
    display: none;
-}
+} */
 
 
 /* body container animation */
