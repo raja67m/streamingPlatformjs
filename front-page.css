@@ -38,6 +38,13 @@ border: 2px solid red;
 .nav-bar ul{
  display: flex;
 }
+.nav-bar ul a{
+   text-decoration: none;
+   list-style: none;
+   color: white;
+}
+
+
 .nav-bar ul li{
    list-style: none;
    margin-left:30px;
@@ -47,7 +54,7 @@ border: 2px solid red;
  transition: .2s ease-in-out;
 }
 .nav-bar ul li:hover{
-color: red;
+   color: red;
 list-style: none;
 font-weight: 600;
 }
