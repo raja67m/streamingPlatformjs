@@ -9,62 +9,81 @@
 </head>
 <body>
  <div class="main">
-  <div class="nav-bar">
-   <a class="head-1"><span>New</span>Moview</a>
-   <ul>
-     <a href="./index.html">  <li>New Movie</li></a>
-     <a href="./gener.html"> <li>Gener</li></a>
-     <a href="./langues.html"><li>Languages</li></a>
-     <a href="./webseries.html"><li>Web series</li></a>
-   </ul>
-   
+  <header>
+      <h2 class="head-1"><span>New</span>Moview</h2>
+
+
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
       <input type="search" name="search" class="searchBox" placeholder="search">
-     
-    </div>
+
+</header>
+
   <!-- Nav bar completed , then started boday container -->
 
-  <section class="bodyContainer">
-   <!-- movie heading -->
+  <section class="bodyContainer" id="newMoview">
+   <!-- movie heading  home container-->
     <div class="sectionConainer">
 
-   <h1>Averangers</h1>
-   <h2>Infinitive war</h2>
+          <h1>Averangers</h1>
+         <h2>Infinitive war</h2>
  
-<!-- movie description about the movie -->
+          <!-- movie description about the movie -->
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequuntur nam. Corrupti aperiam, quod culpa eum ad nostrum iste officia quibusdam pariatur voluptatum laudantium ea aspernatur hic enim suscipit? Unde?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequuntur nam. Corrupti aperiam, quod culpa eum ad nostrum iste officia quibusdam pariatur voluptatum laudantium ea aspernatur hic enim suscipit? Unde?</p>
 
 
-   <div class="movieWatchingBtn">
-   <button>Watch trailer</button>
-   <button><i class='bx bx-play'></i>Watch Now</button>
+        <div class="movieWatchingBtn">
+       <button>Watch trailer</button>
+       <button><i class='bx bx-play'></i>Watch Now</button>
+       </div>
+
+   <!--image scroll container -->
+   <div class="arrow">
+      <i  class='bx bxs-chevron-left' id="nextButton"></i>
+    <!-- slid thumbnali -->
+    <div class="thumbnali" id="thumbani">
+     <div class="image-List">
+   <img src="./new movie list/spiderman.jpg" alt="Not visible">
+   <img src="./new movie list/batman.jpg" alt="Not visible">
+   <img src="./new movie list/Doctor Strange.jpg" alt="Not visible">
+   <img src="./new movie list/IRONMAN.jpg" alt="Not visible">
+   <img src="./new movie list/venom.jpg" alt="Not visible">
+   <img src="./new movie list/blackwidow.jpg" alt="Not visible">
+   <img src="./new movie list/Captain America.jpg" alt="Not visible">
+   <img src="./new movie list/IRONMAN.jpg" alt="Not visible">
+   <img src="./new movie list/venom.jpg" alt="Not visible">
+   <img src="./new movie list/blackwidow.jpg" alt="Not visible">
+   <img src="./new movie list/Captain America.jpg" alt="Not visible">
+   
+     </div>
+        
    </div>
+   
+      <i  class='bx bxs-chevron-right' id="backButton"></i>
+   </div>
+
 </div>
 </section>
 
-<div class="arrow">
-   <i  class='bx bxs-chevron-left' id="nextButton"></i>
- <!-- slid thumbnali -->
- <div class="thumbnali" id="thumbani">
-  <div class="image-List">
-<img src="./new movie list/spiderman.jpg" alt="Not visible">
-<img src="./new movie list/batman.jpg" alt="Not visible">
-<img src="./new movie list/Doctor Strange.jpg" alt="Not visible">
-<img src="./new movie list/IRONMAN.jpg" alt="Not visible">
-<img src="./new movie list/venom.jpg" alt="Not visible">
-<img src="./new movie list/blackwidow.jpg" alt="Not visible">
-<img src="./new movie list/Captain America.jpg" alt="Not visible">
-<img src="./new movie list/IRONMAN.jpg" alt="Not visible">
-<img src="./new movie list/venom.jpg" alt="Not visible">
-<img src="./new movie list/blackwidow.jpg" alt="Not visible">
-<img src="./new movie list/Captain America.jpg" alt="Not visible">
+<!-- movie gener section -->
+<section id="gener">
+<h1>Gener</h1>
+</section>
+<!-- moview languages section -->
+<section id="languages">
+   <h1>Languages</h1>
+</section>
 
-  </div>
-     
-</div>
-
-   <i  class='bx bxs-chevron-right' id="backButton"></i>
-</div>
+<!-- moview web series -->
+ <section id="web-series">
+   <h1>Web series</h1>
+ </section>
 
  
 

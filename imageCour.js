@@ -21,15 +21,22 @@ backButton.addEventListener("click",()=>{
 
 })
 
-// nav bar 
+// Navgation bar
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
-const activePage=window.location.pathname;
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 300;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
 
-
-const navBar=document.querySelectorAll(".nav-bar ul a").forEach(link=>{
-   if(link.href.includes(`${activePage}`)){
-      console.log(`${activePage}`);
-   };
-});
-console.log(navBar);
-
+        if(top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+               //  links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            });
+        };
+    });
+};
