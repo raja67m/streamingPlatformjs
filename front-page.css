@@ -9,6 +9,7 @@ body{
    background-position: center;
    width: 100%;
    height: 100vh;
+   color: white;
 }
 
 header{
@@ -141,10 +142,11 @@ scrollbar-width: none;
    object-fit: cover;
    border-radius: 9px;
 transition: transform 0.5s;
+filter: brightness(.70);
 }
 .image-List img:hover{
    cursor: pointer;
-
+   filter: none;
    transform: scale(1.1);
 
 }
