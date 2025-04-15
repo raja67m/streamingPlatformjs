@@ -22,21 +22,31 @@ backButton.addEventListener("click",()=>{
 })
 
 // Navgation bar
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+// let sections = document.querySelectorAll('section');
+// let navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 300;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+// window.onscroll = () => {
+//     sections.forEach(sec => {
+//         let top = window.scrollY;
+//         let offset = sec.offsetTop - 300;
+//         let height = sec.offsetHeight;
+//         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-               //  links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
-    });
-};
+//         if(top >= offset && top < offset + height) {
+//             navLinks.forEach(links => {
+//                //  links.classList.remove('active');
+//                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+//             });
+//         };
+//     });
+// };
+
+
+const activePage=window.location.pathname;
+console.log(activePage);
+const navLinks=document.querySelectorAll("nav a").forEach(link=>{
+if(link.href.includes(`${activePage}`)){
+   link.classList.add('active');
+}
+})
+
