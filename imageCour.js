@@ -41,6 +41,27 @@ backButton.addEventListener("click",()=>{
 //     });
 // };
 
+// navgtion next page
+
+clickFun=()=>{
+   window.location="./tralier.html";
+}
 
 
+// popup function
+const openPopup=document.getElementById('openPopup');
+const closePopup=document.getElementById('popup-content');
+const popup=document.getElementById('popup');
 
+openPopup.addEventListener('click',()=>{
+   popup.style.display="flex";
+})
+closePopup.addEventListener('click',()=>{
+   popup.style.display="none";
+})
+
+window.addEventListener('click',(event)=>{
+   if(event.target===popup){
+      popup.style.display="none";
+   }
+})

@@ -6,7 +6,8 @@
    <title>Movie web</title>
    <link rel="stylesheet" href="./front-page.css">
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 <body>
  <div class="main">
   <header>
@@ -32,14 +33,19 @@
           <h1>Averangers</h1>
          <h2>Infinitive war</h2>
  
+         <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
           <!-- movie description about the movie -->
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequuntur nam. Corrupti aperiam, quod culpa eum ad nostrum iste officia quibusdam pariatur voluptatum laudantium ea aspernatur hic enim suscipit? Unde?</p>
 
 
         <div class="movieWatchingBtn">
-       <button>Watch trailer</button>
-       <button><i class='bx bx-play'></i>Watch Now</button>
+       <button onclick="clickFun()">Watch trailer</button>
+       <button id="openPopup"><i class='bx bx-play'></i>Watch Now</button>
        </div>
 
    <!--image scroll container -->
@@ -68,9 +74,23 @@
    </div>
 
 </div>
+
+
+<!-- subscribe popup -->
+<div id="popup" >
+  <div id="popup-content">
+    <h2>Confrim New streaming subscribtion</h2>
+    <p>Go to enjoy Wacthing movies free!</p>
+    <button id="closePopup">Close</button>
+   <button> <i class='bx bx-bell'></i>Subscribe</button> 
+</div>
+</div>
+
 </section>
 
+
  </div>
+
 <script src="./imageCour.js"></script>
 <script src="./navbar.js"></script>
 
