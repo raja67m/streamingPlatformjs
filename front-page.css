@@ -79,7 +79,7 @@ header nav a:hover{
  height: 100vh;
 }
 .bodyContainer .sectionConainer{
-   margin-top: 16%;
+   margin-top: 10%;
 padding: 0px 9% 0px;
 
 }
@@ -133,6 +133,7 @@ margin-right: 2px;
 }
 .thumbnali{
 max-width:850px;
+
 }
 .thumbnali .image-List{
 display: grid;
