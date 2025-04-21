@@ -5,6 +5,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Web series</title>
    <link rel="stylesheet" href="./gener.css">
+   <link rel="stylesheet" href="./responsivenavbar.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 
 </head>
 
@@ -14,11 +17,14 @@
 
 
 
-    <nav>
+      <nav class="topnav" id="topNav">
+
       <a href="./index.html">Home</a>
       <a href="./gener.html">Gener</a>
       <a href="./langues.html">Languages</a>
       <a href="./webseries.html">Web series</a>
+      <i class='bx bx-menu' onclick="myFunction()"></i>
+
     </nav>
       <input type="text" onkeyup="searchBar()" id="searchBar" name="search" class="searchBox" placeholder="search">
 
@@ -49,6 +55,8 @@
 
 <script src="./navbar.js"></script>
 <script src="./search.js"></script>
+<script src="./responsive.js"></script>
+
 
 </body>
 </html>

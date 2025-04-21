@@ -5,19 +5,24 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Gener</title>
    <link rel="stylesheet"  href="./gener.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   <link rel="stylesheet" href="./responsivenavbar.css">
+
 </head>
 
 <body>
    <header>
       <h2 class="head-1"><span>New</span>Streaming</h2>
 
+      <nav class="topnav" id="topNav">
 
-
-    <nav>
       <a href="./index.html">Home</a>
       <a href="./gener.html">Gener</a>
       <a href="./langues.html">Languages</a>
       <a href="./webseries.html">Web series</a>
+      <i class='bx bx-menu' onclick="myFunction()"></i>
+
     </nav>
       <input type="text" onkeyup="searchBar()" name="search" class="searchBox" id="searchBar"  placeholder="search">
 
@@ -144,6 +149,8 @@
 
 <script src="./navbar.js"></script>
 <script src="./search.js"></script>
+<script src="./responsive.js"></script>
+
 
 
 </body>
